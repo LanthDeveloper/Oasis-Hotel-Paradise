@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/images/logo_website.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/addon/bootstrap/bootstrap_5.3.3.min.css" />
+    <link rel="stylesheet" href="/addon/bootstrap/bootstrap_custom.css" />
+    <!-- Leaflet CSS-->
+    <link rel="stylesheet" href="/addon/leaflet/leaflet_1.7.1.css" />
+    <link rel="stylesheet" href="/addon/leaflet/leaflet_gesture_handling/leaflet_gesture_handling.css" />
+    <!-- DatePicker CSS-->
+    <link rel="stylesheet" href="/addon/datepicker/daterangepicker.css" />
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="/css/custom/general.css" />
+    <link rel="stylesheet" href="/css/custom/mediaquery.css" />
+    <link rel="stylesheet" href="/css/custom/custom.css" />
+    <!-- Hgome CSS-->
+    <link rel="stylesheet" href="/css/home/navbar.css" />
+    <link rel="stylesheet" href="/css/home/carouselFadeHero.css" />
+    <link rel="stylesheet" href="/css/home/carouselBtn.css" />
+    <link rel="stylesheet" href="/css/home/carouselNoBtn.css" />
+    <link rel="stylesheet" href="/css/home/map.css" />
+    <link rel="stylesheet" href="/css/home/carouselFadeHeroV2.css" />
+    <link rel="stylesheet" href="/css/home/carouselBtnV2.css" />
+    <link rel="stylesheet" href="/css/home/container_banner.css" />
+    <link rel="stylesheet" href="/css/home/carouselNoBtnV2.css" />
+    <link rel="stylesheet" href="/css/home/accordion.css" />
+    <link rel="stylesheet" href="/css/home/footer.css" />
+    <link rel="stylesheet" href="/css/home/reseve_bar.css" />
+    <link rel="stylesheet" href="/css/custom/animation.css">
+    <title>Oasis Hotel Paradise</title>
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <nav class="container">
+        <a class="navbar-brand" href="/index.html">
+          <img id="logo_navbar" src="/images/logo.webp" alt="Website Logo" />
+        </a>
+
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            <a class="nav-link" href="#destination">Destinations</a>
+            <a class="nav-link" href="#experiences">Experiences</a>
+            <a class="nav-link" href="/pages/login/login.html">Sign in</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="carouselFadeHero" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <ul class="carousel-item__box row box_animate">
+            <li class="col-md-12 col-lg-6 l_to_r_lg t_to_b_sm">
+              <a href="#">
+                <div class="carousel-item__info">
+                  <h2>Elevate Your Senses, Unlock the Extraordinary</h2>
+                  <p>Prepare to be elevated to new heights of luxury and exclusivity</p>
+
+                  <div class="carousel-item__card">
+                    <img src="/images/oasis_img/PIC_14.webp" alt="Image Hotel Spain" />
+                    <ul>
+                      <li>
+                        <h5>Unlock the Extraordinary</h5>
+                        <p>Discover a world where every moment surpass your wildest dreams.</p>
+                      </li>
+
+                      <li>
+                        <svg viewBox="0 0 29 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g fill="none" fill-rule="evenodd">
+                            <g transform="translate(-266.000000, -612.000000)" stroke="#252525">
+                              <g transform="translate(266.000000, 612.500000)">
+                                <line x1="0.5" y1="4" x2="27.5" y2="4" id="horizontal-line" stroke-linecap="square"></line>
+                                <polyline id="arrow-head" points="24.5 0 28.5 4 24.5 8"></polyline>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-md-12 col-lg-6 r_to_l_lg b_to_t_sm"></li>
+          </ul>
+        </div>
+
+        <div class="carousel-item">
+          <ul class="carousel-item__box row">
+            <li class="col-md-12 col-lg-6">
+              <a href="#">
+                <div class="carousel-item__info">
+                  <h2>Where Extravagance Meets Exclusivity</h2>
+
+                  <p>Step into a realm where opulence and sophistication converge, crafting an unparalleled luxury experience.</p>
+
+                  <div class="carousel-item__card">
+                    <img src="/images/oasis_img/PIC_24.webp" alt="Image Hotel Spain" />
+                    <ul>
+                      <li>
+                        <h5>Embrace the Ultimate Escape</h5>
+                        <p>Indulge in a meticulously curated paradise, where every detail is designed to exceed your loftiest expectations.</p>
+                      </li>
+                      <li>
+                        <svg viewBox="0 0 29 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g fill="none" fill-rule="evenodd">
+                            <g transform="translate(-266.000000, -612.000000)" stroke="#252525">
+                              <g transform="translate(266.000000, 612.500000)">
+                                <line x1="0.5" y1="4" x2="27.5" y2="4" id="horizontal-line" stroke-linecap="square"></line>
+                                <polyline id="arrow-head" points="24.5 0 28.5 4 24.5 8"></polyline>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-md-12 col-lg-6"></li>
+          </ul>
+        </div>
+      </div>
+
+      <button id="btn_carouselFadeHero" class="carousel-control-prev" type="button" data-bs-target="#carouselFadeHero" data-bs-slide="prev"></button>
+    </section>
+
+    <section id="reseve_bar">
+      <div class="reseve_bar__box">
+        <input type="text" placeholder="Hotel, ciudad o destino" maxlength="20" />
+        <span class="input_date_group">
+          <svg class="svg_reserve" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3 9H21M7 3V5M17 3V5M6 13H8M6 17H8M11 13H13M11 17H13M16 13H18M16 17H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <input id="dateInput" name="daterange" type="text" readonly />
+        </span>
+        <input type="number" placeholder="Nro Habitaciones" minlength="1" maxlength="2" />
+        <input type="text" placeholder="Codigo descuento" minlength="4" maxlength="4" />
+        <span class="button_reserveBar">
+          <button>Enviar</button>
+        </span>
+      </div>
+    </section>
+
+    <section id="destination" class="container_grid box_animate">
+      <div class="container_grid_box l_to_r_lg r_to_l_sm">
+        <h2 class="mb-4">Our recommendations</h2>
+        <div id="carouselBtn">
+          <button class="btn_prev">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                fill="#0F0F0F"
+              />
+            </svg>
+          </button>
+
+          <button class="btn_next">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                fill="#0F0F0F"
+              />
+            </svg>
+          </button>
+
+          <ul class="carousel_list">
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_56.webp" class="card-img-top scale_img" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Argentina</h5>
+                    <p class="card-text">Indulge in the sublime beauty of Argentina at USD 206/night.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_11.webp" class="card-img-top scale_img" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Bora Bora</h5>
+                    <p class="card-text">Discover an idyllic South Pacific from USD 506/night.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_61.webp" class="card-img-top scale_img" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Cuba</h5>
+                    <p class="card-text">Embrace the captivating of the Cuba Isles from USD 376/night.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_14.webp" class="card-img-top scale_img" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Capri</h5>
+                    <p class="card-text">Escape to the exotic splendor of Capri from USD 426/night.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_26.webp" class="card-img-top scale_img" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Maldives</h5>
+                    <p class="card-text">Immerse yourself luxury, starting at USD 856/night.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_16.webp" class="card-img-top scale_img" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Tuscany</h5>
+                    <p class="card-text">Indulge in the timeless elegance from USD 346/night.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_66.webp" class="card-img-top scale_img" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Seychelles</h5>
+                    <p class="card-text">Unwind in the tranquil paradise of the Seychelles, yours from USD 706/night.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container_grid">
+      <div id="carouselNoBtn_container" class="container_grid_box">
+        <h2 class="mb-5 text-center">Our Exclusivity Benefits</h2>
+        <div id="carouselNoBtn">
+          <ul class="carousel_list box_animate">
+            <li class="carousel_item t_to_b_lg">
+              <a href="#">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_54.webp" class="card-img-top" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Exquisite Dining</h5>
+                    <p class="card-text">Indulge your palate with a culinary journey through our world-class restaurants, that is a masterpiece</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item b_to_t_lg">
+              <a href="#">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_1.webp" class="card-img-top" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Secluded Bliss</h5>
+                    <p class="card-text">Discover a haven of tranquility nestled amidst pristine nature, offering a sanctuary for relaxation</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item t_to_b_lg">
+              <a href="#">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_49.webp" class="card-img-top" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Exclusive Amenities</h5>
+                    <p class="card-text">Indulge in a wealth of luxurious amenities designed to elevate your stay to new heights of comfort</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="map"></section>
+
+    <h2 class="mb-4 d-block d-md-none d-lg-none ">Explore our new Resorts</h2>
+    <section id="experiences" class="carouselFadeHeroV2 carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <ul class="carousel-item__box row box_animate">
+            <li class="col-md-12 col-lg-6 l_to_r_lg r_to_l_sm">
+              <div class="carousel-item__info box_animate">
+                <h4>Unveiling Nature's Grandeur</h4>
+                <p>
+                  Immerse yourself in a white stone sanctuary that seamlessly blends with the Mediterranean horizon. This cutting-edge, eco-conscious retreat has been meticulously crafted to provide an unparalleled experience. Just steps
+                  away.
+                </p>
+                <button class="btn btn-secondary mt-3 r_to_l_lg r_to_l_sm"><p>More info</p></button>
+              </div>
+            </li>
+            <li class="col-md-12 col-lg-6 r_to_l_lg l_to_r_sm"></li>
+          </ul>
+        </div>
+
+        <div class="carousel-item">
+          <ul class="carousel-item__box row">
+            <li class="col-md-12 col-lg-6">
+              <div class="carousel-item__info">
+                <h4>Redefining Coastal Luxury</h4>
+                <p>
+                  Embrace the epitome of seaside elegance at our newest beachfront destination. This exclusive enclave seamlessly melds stunning ocean vistas with impeccable design and unparalleled service. Immerse yourself in the soothing
+                  sounds of gentle waves.
+                </p>
+                <button class="btn btn-secondary mt-3"><p>More info</p></button>
+              </div>
+            </li>
+            <li class="col-md-12 col-lg-6"></li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#experiences" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#experiences" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+
+    <section class="container_grid">
+      <div class="container_grid_box">
+        <h2 class="mb-4">Inspiring promotions</h2>
+        <div id="carouselBtnV2">
+          <button class="btn_prev">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                fill="#0F0F0F"
+              />
+            </svg>
+          </button>
+
+          <button class="btn_next">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                fill="#0F0F0F"
+              />
+            </svg>
+          </button>
+
+          <ul class="carousel_list">
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_50.webp" class="card-img-top scale_img" />
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title">Craft Your Dream Wedding in Paradisiacal Splendor</h2>
+
+                    <button>See more</button>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_49.webp" class="card-img-top scale_img" />
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title">Elevate Your Romantic Getaway, Make it Unforgettable</h2>
+                    <button class="btn btn-secondary">See more</button>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_53.webp" class="card-img-top scale_img" />
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title">Discover Nature's Embrace</h2>
+                    <button class="btn btn-secondary">See more</button>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="container_banner">
+      <div class="row">
+        <div id="container_banner__box" class="col-12 col-md-12 col-lg-6">
+          <div class="flex-grow-1">
+            <div>
+              <img src="/images/oasis_img/PIC_53.webp" alt="" />
+              <p>12 June - 14 June</p>
+              <h2>Transcend: A Holistic Awakening</h2>
+              <p>COSTA RICA</p>
+              <p>Embark on a transformative journey of self-discovery, where ancient wisdom intertwines with modern practices.</p>
+              <p><a href="">Unveil Your Potential</a></p>
+            </div>
+          </div>
+          <div>
+            <p>Limited Availability</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container_grid box_animate">
+      <div class="container_grid_box b_to_t">
+        <h2 class="mb-4">Explore our Distinctive Brands</h2>
+        <div id="carouselNoBtnV2">
+          <ul class="carousel_list">
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Exquisite Argentinean Escapes</h5>
+                  </div>
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_16.webp" class="card-img-top" />
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Our Exclusive Collection</h5>
+                  </div>
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_61.webp" class="card-img-top" />
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">French Riviera</h5>
+                  </div>
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_24.webp" class="card-img-top" />
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Journey Through Signature</h2>
+                  </div>
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_30.webp" class="card-img-top" />
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="carousel_item">
+              <a href="#">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Tropical Paradise</h5>
+                  </div>
+                  <div class="card_img">
+                    <img src="/images/oasis_img/PIC_56.webp" class="card-img-top" />
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="accordion_container">
+      <div class="accordion accordion-flush container" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Europa
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Spain</div>
+            <div class="accordion-body">Italy</div>
+            <div class="accordion-body">Germany</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              America
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="accordion-body">USA</div>
+              <div class="accordion-body">Argentina</div>
+              <div class="accordion-body">Brazil</div>
+              <div class="accordion-body">Cuba</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Asia
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="accordion-body">Japan</div>
+              <div class="accordion-body">Korea</div>
+              <div class="accordion-body">China</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="footer_box1">
+            <h2>Explore</h2>
+            <ul class="d-flex flex-column gap-2 mt-2">
+              <li>Destinations</li>
+              <li>Experiences</li>
+              <li>Special Offers</li>
+              <li>Our Story</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="footer_box2">
+            <div>
+              <h2>Subscribe to our Luxury Escapes</h2>
+              <p>Indulge in exclusive offers for your next unforgettable journey.</p>
+            </div>
+            <div>
+              <input type="email" name="" id="" />
+              <button>Send</button>
+            </div>
+            <div>
+              <svg class="svg_footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                <path
+                  d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"
+                />
+              </svg>
+              <svg class="svg_footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                <path
+                  d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
+                />
+              </svg>
+              <svg class="svg_footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                <path
+                  d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="/addon/bootstrap/popperjs_core_2.11.8.min.js"></script>
+    <script src="/addon/bootstrap/bootstrap_5.3.3.min.js"></script>
+    <!-- Leaflet JS -->
+    <script src="/addon/leaflet/leaflet_1.7.1.js"></script>
+    <script src="/addon/leaflet/leaflet_gesture_handling/leaflet_gesture_handling.js"></script>
+    <!-- DatePicker JS-->
+    <script src="/addon/datepicker/jquery.min.js"></script>
+    <script src="/addon/datepicker/momentjs.min.js"></script>
+    <script src="/addon/datepicker/daterangepicker.min.js"></script>
+    <!-- Home JS -->
+    <script src="/javacript/carouselFadeHero.js"></script>
+    <script src="/javacript/carouselBtn.js"></script>
+    <script src="/javacript/map.js"></script>
+    <script src="/javacript/carouselNoBtnV2.js"></script>
+    <script src="/javacript/navbar.js"></script>
+    <script src="/javacript/calendar.js"></script>
+    <script src="/javacript/animate.js"></script>
+  </body>
+</html>
