@@ -6,8 +6,8 @@ var map = L.map("map", {
   maxZoom: 18,
   minZoom: 3,
   maxBounds: [
-    [-50, -170], // Sudoeste
-    [65, 170], // Noreste
+    [-50, -170], 
+    [65, 170], 
   ],
   gestureHandling: true,
 });
@@ -19,7 +19,6 @@ var OpenStreetMap_Mapnik = L.tileLayer(
   }
 ).addTo(map);
 
-// Agregar marcadores
 var limaMarker = L.circleMarker([-12.0464, -77.0428], {
   color: "black",
   fillOpacity: 0.5,
@@ -116,26 +115,24 @@ var dakarMarker = L.circleMarker([14.7167, -17.4677], {
   radius: 15,
 }).addTo(map);
 
-// Variable para almacenar el popup actual
 var currentPopup = null;
 
-// Función para hacer zoom al marcador y abrir el popup
 function zoomToMarkerAndOpenPopup(marker, zoomLevel, message, imageUrl) {
   map.setView(marker.getLatLng(), zoomLevel);
-  // Crear el div con el mensaje y la imagen
+
   var welcomeDiv = L.DomUtil.create('div', 'welcome-div');
   welcomeDiv.innerHTML = message;
-  // Crear la imagen
+
   var img = L.DomUtil.create('img', 'welcome-image');
   img.src = imageUrl;
   welcomeDiv.appendChild(img);
-  // Crear el popup y asociarlo al marcador
+
   currentPopup = L.popup()
     .setContent(welcomeDiv)
     .setLatLng(marker.getLatLng());
   marker.bindPopup(currentPopup).openPopup();
 }
-// Agregar eventos de click a los marcadores
+
 limaMarker.on('click', function() {
   zoomToMarkerAndOpenPopup(limaMarker, 11, 'Hotel Lima Paradise', '/images/hotel1.jpeg');
 });
@@ -200,8 +197,6 @@ dakarMarker.on('click', function() {
   zoomToMarkerAndOpenPopup(dakarMarker, 11, 'Hotel Dakar Serenity', '/images/hotel1.jpeg');
 });
 
-
-// Ocultar el div de bienvenida cuando el zoom sea menor a 4
 map.on('zoomend', function() {
   if (map.getZoom() < 4 && currentPopup) {
     currentPopup.remove();

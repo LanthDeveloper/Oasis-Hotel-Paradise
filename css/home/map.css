@@ -21,11 +21,11 @@
     background-color: black;
 }
 .leaflet-popup-content {
-    width: 14em; /* Ajusta el ancho máximo según tus necesidades */
+    width: 14em; 
 }
 
 .welcome-image {
-    width: 60%; /* La imagen tendrá un ancho máximo del 100% del contenedor */
+    width: 60%; 
 }
 
 @media (width <= 650px) {

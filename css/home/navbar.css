@@ -34,7 +34,7 @@
 }
 
 @media (width <= 991px) {
-    /* CUSTOMS */
+
     .navbar-collapse > div {
         height: 100vh;
     }
@@ -63,7 +63,6 @@
     }
 }
 
-/* Remove border from toggler */
 .navbar-toggler {
     border: 0 !important;
 }
@@ -76,7 +75,6 @@
     border: 0 !important;
 }
 
-/* Lines of the Toggler */
 .toggler-icon {
     width: 1.875em;
     height: 0.19em;
@@ -85,12 +83,10 @@
     transition: all 0.2s;
 }
 
-/* Adds Space between the lines */
 .middle-bar {
     margin: 0.3125em auto;
 }
 
-/* State when navbar is opened (START) */
 .navbar-toggler .top-bar {
     transform: rotate(45deg);
     transform-origin: 10% 10%;
@@ -105,9 +101,7 @@
     transform: rotate(-45deg);
     transform-origin: 10% 90%;
 }
-/* State when navbar is opened (END) */
 
-/* State when navbar is collapsed (START) */
 .navbar-toggler.collapsed .top-bar {
     transform: rotate(0);
 }
@@ -120,9 +114,7 @@
 .navbar-toggler.collapsed .bottom-bar {
     transform: rotate(0);
 }
-/* State when navbar is collapsed (END) */
 
-/* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
     background-color: #777777;
 }

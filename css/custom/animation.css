@@ -1,10 +1,8 @@
-/* Animaciones generales */
 .box_animate > * {
   opacity: 0;
   transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
 }
 
-/* Animaciones para pantallas grandes (lg) */
 @media (width >= 700px) {
   .l_to_r_lg {
       transform: translateX(-50%);
@@ -23,7 +21,6 @@
   }
 }
 
-/* Animaciones para pantallas pequeñas (sm) */
 @media (width <= 700px) {
   .l_to_r_sm {
       transform: translateX(-100%);

@@ -1,4 +1,3 @@
-/* carouselFadeHeroV2 */
 #experiences {
   position: relative;
 }
@@ -53,12 +52,10 @@
   opacity: 65%;
 }
 
-/* Aumentar la duración de la transición para un efecto de desvanecimiento más suave */
 #experiences > .carousel-item {
   transition: transform 1.5s ease-in-out;
 }
 
-/* Aumentar la duración de la transición de opacidad para un efecto de desvanecimiento más suave */
 #experiences .active.carousel-item-start,
 #experiences .active.carousel-item-end {
   transition: opacity 0.5s ease-in-out;

@@ -12,7 +12,7 @@
 
 #carouselBtnV2 .carousel_item .scale_img {
     transform: scale(1);
-    transition: transform 0.3s ease-in-out; /* Aplica la transición en el estado normal */
+    transition: transform 0.3s ease-in-out; 
 }
 
 #carouselBtnV2 .carousel_item:hover .scale_img {

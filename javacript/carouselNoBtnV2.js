@@ -1,11 +1,9 @@
 const carouselItems = document.querySelectorAll('#carouselNoBtnV2>.carousel_list>.carousel_item');
 
-// Función para detectar si es un dispositivo móvil
 function isMobileDevice() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
-// Comprobar si no es un dispositivo móvil antes de aplicar los efectos
 if (!isMobileDevice()) {
   window.addEventListener('load', () => {
     carouselItems.forEach(item => {
