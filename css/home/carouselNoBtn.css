@@ -1,0 +1,67 @@
+#carouselNoBtn_container {
+    padding-top: 0;
+}
+/* Carousel NObtn */
+
+#carouselNoBtn .carousel_list {
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+}
+
+#carouselNoBtn .carousel_list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    scrollbar-width: thin !important;
+    scrollbar-color: gray black !important;
+}
+
+#carouselNoBtn .card_img {
+    position: relative;
+    overflow: hidden;
+}
+
+#carouselNoBtn .carousel_list.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+
+@media (width <= 1280px) {
+    #carouselNoBtn .carousel_list {
+        justify-content: stretch;
+    }
+}
+
+@media (width >= 1280px) {
+    #carouselNoBtn .carousel_list {
+        justify-content: center;
+    }
+}
+
+#carouselNoBtn .carousel_list .card {
+    width: 24.1em;
+    border: none;
+    background-color: black;
+    color: white;
+    pointer-events: none;
+}
+
+@media (width <= 650px) {
+    #carouselNoBtn .carousel_list .card {
+        width: 31em;
+    }
+}
+
+#carouselNoBtn_container {
+    .card-body > h5 {
+        color: rgb(209, 205, 199);
+        font-size: 1.0625em;
+        font-weight: 400;
+        margin-bottom: 1.2em;
+    }
+    .card-body > p {
+        color: rgb(159, 151, 139);
+        font-size: 0.9375em;
+        font-weight: 400;
+    }
+}

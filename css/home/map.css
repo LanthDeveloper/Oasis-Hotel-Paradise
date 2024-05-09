@@ -1,0 +1,35 @@
+#map {
+    position: relative;
+    width: 99vw;
+    height: 75vh;
+    max-height: 1000px;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    opacity: 90%;
+}
+.welcome-div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: black;
+    color: white;
+}
+.leaflet-popup {
+    background-color: black;
+}
+.leaflet-popup-content-wrapper {
+    background-color: black;
+}
+.leaflet-popup-content {
+    width: 14em; /* Ajusta el ancho máximo según tus necesidades */
+}
+
+.welcome-image {
+    width: 60%; /* La imagen tendrá un ancho máximo del 100% del contenedor */
+}
+
+@media (width <= 650px) {
+    #map {
+        height: 60vh;
+    }
+}

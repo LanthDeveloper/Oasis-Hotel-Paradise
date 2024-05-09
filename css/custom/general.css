@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scrollbar-width: thin !important;
+  scrollbar-color: gray black !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+@media (max-width: 700px) {
+  * {
+      scrollbar-width: none;
+  }
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.35em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1.125em;
+}
+
+button,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+p,
+a,
+span {
+  display: block;
+}
+.row > * {
+  padding: 0;
+}

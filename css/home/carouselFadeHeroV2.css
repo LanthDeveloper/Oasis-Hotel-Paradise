@@ -1,0 +1,148 @@
+/* carouselFadeHeroV2 */
+#experiences {
+  position: relative;
+}
+#experiences .carousel-inner {
+  max-height: 1200px;
+}
+#experiences .carousel-item__box > li {
+  max-height: 1200px;
+}
+#experiences > .carousel-control-prev {
+  position: absolute;
+  left: 6%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.5);
+  border: none;
+}
+#experiences > .carousel-control-next {
+  position: absolute;
+  left: 12%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.5);
+  border: none;
+}
+
+#experiences .carousel-item__box > li {
+  height: 80vh;
+}
+
+#experiences .carousel-item__box > li:nth-child(1) {
+  display: grid;
+  place-content: center;
+}
+
+#experiences .carousel-item:nth-child(1) > .carousel-item__box > li:nth-child(2) {
+  background-image: url("/images/oasis_img/PIC_46.webp");
+  background-size: cover;
+  background-position: center;
+  opacity: 65%;
+}
+#experiences .carousel-item:nth-child(2) > .carousel-item__box > li:nth-child(2) {
+  background-image: url("/images/oasis_img/PIC_42.webp");
+  background-size: cover;
+  background-position: center;
+  opacity: 65%;
+}
+
+/* Aumentar la duración de la transición para un efecto de desvanecimiento más suave */
+#experiences > .carousel-item {
+  transition: transform 1.5s ease-in-out;
+}
+
+/* Aumentar la duración de la transición de opacidad para un efecto de desvanecimiento más suave */
+#experiences .active.carousel-item-start,
+#experiences .active.carousel-item-end {
+  transition: opacity 0.5s ease-in-out;
+}
+#experiences .carousel-item__info {
+  padding: 0em 3em;
+}
+
+@media (width <= 1000px) {
+  #experiences .carousel-item__box > li {
+      height: 45vh;
+  }
+  #experiences .carousel-control-prev {
+      left: 67%;
+      top: 89%;
+  }
+  #experiences .carousel-control-next {
+      left: 80%;
+      top: 89%;
+  }
+}
+
+@media (width <= 200px) {
+  #experiences .carousel-item {
+      height: auto;
+  }
+  #experiences .carousel-item__box > li:nth-child(1) {
+      height: auto;
+  }
+  #experiences .carousel-item__box > li:nth-child(2) {
+      height: 50vh;
+  }
+  #experiences .carousel-item__info {
+      padding: 2em 0;
+  }
+}
+
+@media (width >= 1500px) {
+  #experiences .carousel-item__box > li:nth-child(1) {
+      display: grid;
+      justify-content: end;
+      padding-right: 8em;
+  }
+  #experiences > .carousel-control-prev {
+      display: none;
+  }
+  #experiences .carousel-item__info {
+      max-width: 35em;
+  }
+  #experiences > .carousel-control-next {
+      display: none;
+  }
+}
+
+@media (width <= 990px) {
+  #experiences .carousel-item__box > li:nth-child(1) {
+      order: 2;
+  }
+}
+
+#experiences {
+  .carousel-item__info > h4 {
+      color: rgb(232, 230, 227);
+      font-size: 2.5865em;
+      margin-bottom: 0.4em;
+  }
+  .carousel-item__info > p {
+      color: rgb(159, 151, 139);
+      font-size: 1em;
+      margin-bottom: 3em;
+  }
+  .carousel-item__info > button {
+      border-radius: 0;
+      padding: 1em 3em;
+  }
+}
+
+@media (width <= 350px) {
+  #experiences .carousel-item__box > li:nth-child(1) {
+      height: 70vh;
+  }
+}
+@media (width <= 650px) {
+  .carousel-item__info > p {
+      font-size: 1.3em;
+  }
+}

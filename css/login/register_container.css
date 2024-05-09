@@ -1,0 +1,76 @@
+.register_container__box > li {
+  height: 100vh;
+}
+
+.register_container__box > li:nth-child(1) {
+  display: grid;
+  place-items: center;
+}
+.register_container__box > li:nth-child(2) {
+  background-image: url("/images/oasis_img/PIC_45.webp");
+  background-size: cover;
+  background-position: center;
+  opacity: 65%;
+}
+
+@media (width <= 1000px) {
+  .register_container__box > li:nth-child(1) {
+      padding: 0em 2em;
+      height: 80vh;
+  }
+  .register_container__box > li:nth-child(2) {
+      height: 50vh;
+  }
+}
+
+.svg_register {
+  filter: invert(100%);
+  width: 2em;
+}
+
+.container_box_register {
+  display: flex;
+  flex-flow: column;
+  gap: 1.2em;
+}
+.form-select {
+  border-radius: 0;
+  height: 2.8em;
+  width: 5em;
+  font-size: 1.2em;
+  background-color: black;
+  color: white;
+  border-radius: 0;
+}
+
+.container_box_register input {
+  padding: 0.9em;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+.container_box_register button {
+  margin-top: 1.5em;
+  width: 9.375rem;
+  padding: 1em 3em;
+  background-color: black;
+  color: white;
+  border-radius: 0;
+  border: 1px solid white;
+  transition: all 0.35s ease-in-out;
+}
+
+.container_box_register button:hover {
+  background-color: white;
+  color: black;
+}
+.container_box_register > h2 {
+  font-size: 3em;
+}
+
+@media (width <= 650px) {
+  .container_box_register > h2 {
+      font-size: 2.5em;
+      text-align: center;
+  }
+}

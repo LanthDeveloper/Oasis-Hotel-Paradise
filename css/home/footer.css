@@ -1,0 +1,66 @@
+.svg_footer {
+    width: 2em;
+    fill: rgb(255, 255, 255);
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer > .row > div:nth-child(2) {
+    display: flex;
+    justify-content: end;
+}
+.footer_box2 {
+    display: flex;
+    flex-flow: column;
+    gap: 0.8em;
+}
+footer > .row {
+    padding: 4em 0;
+    padding-bottom: 8em;
+    width: 85vw;
+    max-width: 1280px;
+}
+
+@media (width <= 650px) {
+    footer > .row {
+        padding: 4em 0;
+        padding-bottom: 4em;
+    }
+    footer > .row > div:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+    footer > .row > div:nth-child(2) {
+        justify-content: center;
+    }
+    .footer_box1 {
+        text-align: center;
+    }
+    .footer_box2 {
+        text-align: center;
+    }
+}
+.footer_box2 > div:nth-child(2) > input {
+    border-radius: 0;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    color: white;
+    padding: 0.65em 2em;
+}
+.footer_box2 > div:nth-child(2) > button {
+    border-radius: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    color: black;
+    padding: 0.7em 2em;
+    transition: all 0.35s;
+    opacity: 0.9;
+}
+.footer_box2 > div:nth-child(2) > button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}

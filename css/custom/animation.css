@@ -1,0 +1,47 @@
+/* Animaciones generales */
+.box_animate > * {
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+
+/* Animaciones para pantallas grandes (lg) */
+@media (width >= 700px) {
+  .l_to_r_lg {
+      transform: translateX(-50%);
+  }
+
+  .r_to_l_lg {
+      transform: translateX(50%);
+  }
+
+  .t_to_b_lg {
+      transform: translateY(-70%);
+  }
+
+  .b_to_t_lg {
+      transform: translateY(70%);
+  }
+}
+
+/* Animaciones para pantallas pequeñas (sm) */
+@media (width <= 700px) {
+  .l_to_r_sm {
+      transform: translateX(-100%);
+  }
+
+  .r_to_l_sm {
+      transform: translateX(100%);
+  }
+
+  .t_to_b_sm {
+      transform: translateY(-50%);
+  }
+
+  .b_to_t_sm {
+      transform: translateY(50%);
+  }
+}
+.animate > * {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}

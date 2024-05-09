@@ -1,0 +1,65 @@
+@media (0px <= width <=150px) {
+  button {
+      padding: 0.5em 0em !important;
+  }
+  select {
+      padding: 0.45em 0 !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+      word-break: break-all !important;
+  }
+}
+
+@media (0px <= width <=50px) {
+  body {
+      font-size: 0.15em !important;
+  }
+}
+
+@media (50px <= width <=70px) {
+  body {
+      font-size: 0.25em !important;
+  }
+}
+
+@media (70px <= width <=100px) {
+  body {
+      font-size: 0.35em !important;
+  }
+}
+
+@media (100px <= width <=200px) {
+  body {
+      font-size: 0.45em !important;
+  }
+}
+
+@media (200px <= width <=300px) {
+  body {
+      font-size: 0.6em !important;
+  }
+}
+
+@media (300px <= width <=540px) {
+  body {
+      font-size: 0.7em !important;
+  }
+}
+
+@media (540px <= width <=740px) {
+  body {
+      font-size: 0.8em !important;
+  }
+}
+
+@media (740px <= width <=940px) {
+  body {
+      font-size: 0.9em !important;
+  }
+}

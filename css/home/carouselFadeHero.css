@@ -1,0 +1,160 @@
+/* carouselFadeHeroV2 */
+#carouselFadeHero {
+  position: relative;
+}
+#carouselFadeHero .carousel-inner {
+  max-height: 1200px;
+}
+#carouselFadeHero .carousel-item__box > li {
+  max-height: 1200px;
+}
+
+#carouselFadeHero > .carousel-control-next {
+  width: 0;
+  padding: 0;
+}
+
+#carouselFadeHero .carousel-item__box > li {
+  height: 100vh;
+}
+
+#carouselFadeHero .carousel-item__box > li:nth-child(1) {
+  display: grid;
+  place-content: center;
+}
+
+#carouselFadeHero .carousel-item__card {
+  margin-top: 1em;
+  display: flex;
+  flex-flow: row;
+}
+#carouselFadeHero .carousel-item__card > img {
+  width: 6em;
+}
+#carouselFadeHero .carousel-item__card > ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 0.5em 2em;
+}
+#carouselFadeHero .carousel-item__card svg {
+  width: 2em;
+  filter: invert(100%);
+}
+
+#carouselFadeHero .carousel-item:nth-child(1) > .carousel-item__box > li:nth-child(2) {
+  background-image: url("/images/oasis_img/PIC_55.webp");
+  background-size: cover;
+  background-position: center;
+  opacity: 65%;
+}
+#carouselFadeHero .carousel-item:nth-child(2) > .carousel-item__box > li:nth-child(2) {
+  background-image: url("/images/oasis_img/PIC_50.webp");
+  background-size: cover;
+  background-position: left;
+  opacity: 65%;
+}
+
+/* Aumentar la duración de la transición para un efecto de desvanecimiento más suave */
+#carouselFadeHero > .carousel-item {
+  transition: transform 1.5s ease-in-out;
+}
+
+/* Aumentar la duración de la transición de opacidad para un efecto de desvanecimiento más suave */
+#carouselFadeHero .active.carousel-item-start,
+#carouselFadeHero .active.carousel-item-end {
+  transition: opacity 0.5s ease-in-out;
+}
+#carouselFadeHero .carousel-item__info {
+  padding: 0em 3em;
+}
+
+@media (width <= 1000px) {
+  #carouselFadeHero .carousel-item__box > li {
+      height: 50vh;
+  }
+  #carouselFadeHero .carousel-control-prev {
+      left: 40%;
+      top: 98%;
+  }
+  #carouselFadeHero .carousel-control-next {
+      left: 60%;
+      top: 98%;
+  }
+}
+
+@media (width <= 200px) {
+  #carouselFadeHero .carousel-item {
+      height: auto;
+  }
+  #carouselFadeHero .carousel-item__box > li:nth-child(1) {
+      height: auto;
+  }
+  #carouselFadeHero .carousel-item__box > li:nth-child(2) {
+      height: 50vh;
+  }
+  #carouselFadeHero .carousel-item__info {
+      padding: 2em 0;
+  }
+}
+
+@media (width >= 1500px) {
+  #carouselFadeHero .carousel-item__box > li:nth-child(1) {
+      display: grid;
+      justify-content: end;
+      padding-right: 8em;
+  }
+  #carouselFadeHero > .carousel-control-prev {
+      display: none;
+  }
+  #carouselFadeHeroV2 .carousel-item__info {
+      max-width: 35em;
+  }
+  #carouselFadeHero > .carousel-control-next {
+      display: none;
+  }
+}
+
+#carouselFadeHero {
+  .carousel-item__info > h2 {
+      font-size: 3.8em;
+      font-weight: 400;
+      letter-spacing: 0.045em;
+      color: rgb(209, 205, 199);
+  }
+  .carousel-item__info > p {
+      font-size: 1.0625em;
+      font-weight: 200;
+      line-height: 1.75em;
+      color: rgb(209, 205, 199);
+  }
+  .carousel-item__card > ul > li > h5 {
+      color: rgb(209, 205, 199);
+      font-weight: 400;
+      font-size: 1.0625em;
+  }
+  .carousel-item__card > ul > li > p {
+      color: rgb(209, 205, 199);
+      font-size: 0.75em;
+      font-weight: 200;
+  }
+}
+
+@media (width <= 350px) {
+  #carouselFadeHero .carousel-item__box > li:nth-child(1) {
+      height: 70vh;
+  }
+}
+@media (width <= 650px) {
+  #carouselFadeHero .carousel-item__box > li:nth-child(1) {
+      display: grid;
+      align-content: end;
+      margin-bottom: 2.5em;
+  }
+  #carouselFadeHero {
+      .carousel-item__info > h2 {
+          font-size: 3em;
+          margin-bottom: 0.6em;
+      }
+  }
+}

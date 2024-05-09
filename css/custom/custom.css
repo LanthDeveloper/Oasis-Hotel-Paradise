@@ -1,0 +1,16 @@
+.container_grid {
+    display: grid;
+    place-items: center;
+}
+.container_grid_box {
+    max-width: 1500px;
+    width: 98vw;
+    padding: 4em 2em;
+}
+
+@media (width <= 650px) {
+    .container_grid_box {
+        width: 96vw;
+        padding: 4em 0em;
+    }
+}

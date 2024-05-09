@@ -1,0 +1,70 @@
+/* Carousel NObtn */
+#carouselNoBtnV2 .carousel_list .card {
+    background-color: black;
+    color: white;
+    pointer-events: none;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 0;
+}
+
+#carouselNoBtnV2 .carousel_list {
+    display: flex;
+    overflow-x: auto;
+}
+
+#carouselNoBtnV2 .carousel_list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    scrollbar-width: thin !important;
+    scrollbar-color: gray black !important;
+}
+
+#carouselNoBtnV2 .card_img {
+    position: relative;
+    overflow: hidden;
+}
+
+#carouselNoBtnV2 .carousel_list.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+
+@media (width <= 1280px) {
+    #carouselNoBtnV2 .carousel_list {
+        justify-content: stretch;
+    }
+}
+
+@media (width >= 1280px) {
+    #carouselNoBtnV2 .carousel_list {
+        justify-content: center;
+    }
+}
+
+#carouselNoBtnV2 .card {
+    height: 35em;
+    width: 16em;
+    padding: 1em 2em;
+    text-align: center;
+}
+
+@media (width>=650px) {
+    #carouselNoBtnV2 > .carousel_list > .carousel_item {
+        opacity: 0.5;
+        transition: opacity 0.35s ease-in-out;
+    }
+
+    #carouselNoBtnV2 > .carousel_list > .carousel_item:hover {
+        opacity: 1;
+    }
+}
+
+@media (width<=650px) {
+    #carouselNoBtnV2 .card {
+        height: 25em;
+        width: 13.5em;
+    }
+    #carouselNoBtnV2 > .carousel_list > .carousel_item:hover {
+        filter: saturate(125%);
+    }
+}

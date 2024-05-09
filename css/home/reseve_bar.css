@@ -1,0 +1,143 @@
+#reseve_bar {
+  width: 100%;
+  position: fixed;
+  bottom: 2%;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+}
+.reseve_bar__box {
+  display: flex;
+  flex-flow: row;
+}
+.reseve_bar__box > input {
+  padding: 1.5em 2em;
+  padding-left: 1em;
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(82, 82, 82);
+}
+.reseve_bar__box > input:focus {
+  outline: none !important;
+}
+.reseve_bar__box > input::placeholder {
+  color: rgb(255, 255, 255, 0.7);
+}
+.reseve_bar__box > input:nth-child(1) {
+  padding: 1.5em 5em;
+  padding-left: 1em;
+}
+.reseve_bar__box > input:nth-child(4) {
+  border-right: none;
+}
+.reseve_bar__box .button_reserveBar {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border: 1px solid rgb(82, 82, 82);
+  border-left: none;
+  background-color: black;
+}
+.reseve_bar__box button {
+  background-color: rgb(82, 82, 82);
+  color: rgb(255, 255, 255, 0.7);
+  padding: 1em 2em;
+  margin: 0 0.5em;
+}
+@media (width <= 1195px) {
+  #reseve_bar {
+      display: none !important;
+  }
+}
+
+.input_date_group {
+  background-color: black;
+  display: flex;
+  gap: 0.5em;
+  border: 1px solid rgb(82, 82, 82);
+  width: max-content;
+  padding: 1.5em 2em;
+  padding-left: 1em;
+}
+#dateInput {
+  border: none;
+  background-color: black;
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 1em;
+}
+.svg_reserve {
+  width: 1.2em;
+  filter: invert(100%);
+}
+#dateInput:focus {
+  outline: none;
+}
+.daterangepicker {
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.daterangepicker .calendar-table {
+  background-color: #1a1a1a;
+  border: none;
+}
+
+.daterangepicker td.off,
+.daterangepicker td.off.end-date,
+.daterangepicker td.off.start-date {
+  background-color: #333333;
+  color: #666666;
+}
+
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.daterangepicker td.in-range {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover,
+.daterangepicker td.start-date,
+.daterangepicker td.end-date {
+  background-color: #003366;
+  color: #ffffff;
+}
+
+.daterangepicker .calendar-table th {
+  color: #cccccc;
+}
+
+.daterangepicker .drp-buttons .btn {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #666666;
+}
+
+.daterangepicker .drp-buttons .btn:hover {
+  background-color: #666666;
+  color: #ffffff;
+}
+.daterangepicker td.off {
+  background-color: #1a1a1a !important;
+  color: black !important;
+}
+
+.daterangepicker .calendar-table .next span,
+.daterangepicker .calendar-table .prev span {
+  border-right: solid white;
+  border-bottom: solid white;
+}
+
+#reseve_bar {
+  input {
+      color: rgb(209, 205, 199);
+      font-size: 15px;
+      font-weight: 400;
+  }
+}
