@@ -1,6 +1,6 @@
 # Oasis Paradise Hotel
 
-This project is a demo page designed for a web developer's portfolio. It represents an online booking site for a luxury hotel called "Oasis Paradise Hotel." The primary goal is to showcase my web development skills, including responsive design, intuitive user interactions, and an appealing user experience.
+Oasis Paradise Hotel is a luxurious and inviting online platform for seamless booking. With beautiful imagery showcasing world-class, this platform offers an enticing glimpse into the paradise awaiting guests.
 
 ## Live preview
 
